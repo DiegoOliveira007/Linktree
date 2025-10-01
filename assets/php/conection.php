@@ -1,8 +1,8 @@
-<?php
+﻿<?php
 
 $host = "localhost";
 $usuario = "root";
-$senha = "Fd08131028!";
+$senha = "";
 $banco = "linktree";
 
 $mysqli = new mysqli($host, $usuario, $senha, $banco);

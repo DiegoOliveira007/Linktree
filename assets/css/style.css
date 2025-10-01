@@ -3,6 +3,7 @@
     --color-segundary: #cf708f;
     --color-tertiary: #081b22;
     --color-quaternary: #5b445e;
+    --color-fonte: #806883;
     --color-white: #f3f3f3;
     --font-primary: "Bebas Neue";
 }
@@ -16,18 +17,75 @@ body {
     background-image: url(../img/background.jpg);
 }
 
+#conteiner-primary {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border: 2px solid var(--color-primary);
+    border-radius: 10px;
+    align-items: center;
+    margin: 2% auto;
+    width: 35%;
+    background-image: linear-gradient(to bottom, transparent, var(--color-primary) 50%);
+    padding: 2%;
+    box-shadow: 0 50px 150px var(--color-quaternary);
+}
+
 #container-links {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    border: 2px solid var(--color-segundary);
-    border-radius: 5px;
     align-items: center;
     margin: 2% auto;
-    width: 35%;
-    background-image: linear-gradient(to bottom, transparent, var(--color-primary) 50%, var(--color-segundary));
-    padding: 2%;
-    box-shadow: 0 50px 150px var(--color-quaternary);
+    width: 90%;
+}
+
+.info-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+#nome-user {
+    color: var(--color-fonte);
+    font-family: var(--font-primary);
+    letter-spacing: 2px;
+    font-size: 32px;
+}
+
+#imagem-user {
+    width: 120px;
+    height: 120px;
+    border-radius: 200%;
+    border: 4px solid var(--color-primary);
+}
+
+#frase-user {
+    color: var(--color-fonte);
+    text-align: center;
+    font-family: var(--font-primary);
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+#button-insta {
+    font-size: 25px;
+    color: var(--color-white);
+    cursor: pointer;
+    background: none;
+    border: none;
+    transition: all 0.3s ease-in-out;
+}
+
+#button-insta:hover {
+    transform: scale(1.2);
+    transform-origin: bottom;
+}
+
+#button-insta:active {
+    transform: scale(1.1);
+    transform-origin: top;
 }
 
 #title-linktree {
@@ -48,25 +106,21 @@ hr {
     font-family: var(--font-primary);
     display: flex;
     flex-direction: column;
-    padding: 2%;
-    width: 77%;
+    padding: 3%;
+    width: 71%;
     align-items: center;
     gap: 5px;
     border: 2px var(--color-white) solid;
     box-shadow: 0 3px var(--color-white);
     border-radius: 10px;
     margin-bottom: 7%;
-    color: var(--color-quaternary);
+    color: var(--color-fonte);
     cursor: pointer;
     transition: all 0.3s ease-in-out;
 }
 
-.nome {
-    font-size: 23px;
-}
-
 .links {
-    font-size: 20px;
+    font-size: 22px;
 }
 
 .link:hover {
