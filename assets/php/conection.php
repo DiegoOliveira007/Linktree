@@ -2,7 +2,7 @@
 
 $host = "localhost";
 $usuario = "root";
-$senha = "";
+$senha = "Fd08131028!";
 $banco = "linktree";
 
 $mysqli = new mysqli($host, $usuario, $senha, $banco);

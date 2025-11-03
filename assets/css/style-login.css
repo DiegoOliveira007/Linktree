@@ -1,0 +1,128 @@
+:root{
+    --color-primary: #fcb9a6d0;
+    --color-segundary: #cf708f;
+    --color-tertiary: #081b22;
+    --color-quaternary: #5b445e;
+    --color-fonte: #806883;
+    --color-white: #f1f1f1;
+    --font-primary: "Bebas Neue";
+}
+
+@font-face {
+    font-family: "Bebas Neue";
+    src: url(../font/BebasNeue-Regular.ttf);
+}
+
+body {
+    background-image: url(../img/background.jpg);
+    font-family: var(--font-primary);
+}
+
+#main-login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 7%;
+}
+
+#conteiner-login{
+    display: flex;
+    padding: 4px;
+    width: 50%;
+    border-radius: 10px;
+}
+
+#logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    border-top-left-radius: 15px;
+    background-color: var(--color-white);
+    background-image: url(../img/background-login.png);
+    background-size: 120%;
+}
+
+#logo-login{
+    width: 50%;
+    background-color: var(--color-white);
+    border-radius: 50%;
+    border: solid 3px var(--color-quaternary);
+}
+
+#forms-box{
+    display: flex;
+    border-top-right-radius: 15px;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 8%;
+    background-image: linear-gradient(to bottom, var(--color-primary), var(--color-segundary) 90%);
+}
+
+#forms-login{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+
+.input-box{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.label-user{
+    color: var(--color-tertiary);
+    font-size: 19px;
+}
+
+.input-user{
+    border: solid 2px var(--color-tertiary);
+    font-size: 15px;
+    border-radius: 3px;
+    outline: none;
+    padding: 2%;
+    height: 20px;
+    transition: border 0.1s ease-in-out;
+}
+
+.input-user:focus{
+    border: solid 2px var(--color-quaternary) ;
+    box-shadow: 0 2px 2px var(--color-quaternary);
+}
+
+.button-login{
+    margin: auto;
+    padding: 3%;
+    background-color: var(--color-primary);
+    width: 45%;
+    border: 2px var(--color-quaternary) solid;
+    border-radius: 10px;
+    box-shadow: 0 3px var(--color-quaternary);
+    font-size: 17px;
+    letter-spacing: 3px;
+    font-family: var(--font-primary);
+    color: var(--color-white);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.button-login:hover{
+    transform: scale(1.06);
+}
+
+.button-login:active{
+    transform: scale(0.9);
+    box-shadow: 0 1px var(--color-quaternary);
+}
+
+#title-login{
+    color: var(--color-tertiary);
+    font-size: 35px;
+    text-align: center;
+    
+}

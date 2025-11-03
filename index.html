@@ -1,27 +1,39 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/reset.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/fontawesome/css/all.css">
-    <title>Linktree</title>
+    <link rel="stylesheet" href="assets/css/style-login.css">
+    <title>Login</title>
 </head>
-
 <body>
+    <main id="main-login">
+        <div id="conteiner-login">
+            <div id="logo">
+                <img id="logo-login" src="./assets/img/logo-img.png" alt="logo">
+            </div>
 
-    <div id="conteiner-primary">
-        <div id="profile">
-        </div>
-        <div id="container-links">
-            <hr>
-        </div>
-    </div>
+            <div id="forms-box">
+                <h1 id="title-login">Bem vindo ao Linktree</h1>
+                <form action="./assets/php/login.php" method="post" id="forms-login">
+                    <div class="input-box">
+                        <label for="nome-user" class="label-user">Nome</label>
+                        <input name="nome" type="text" id="name-user" class="input-user" placeholder="Seu nome">
+                        <p id="nome-error"></p>
+                    </div>
 
+                    <div class="input-box">
+                        <label for="senha-user" class="label-user">Senha</label>
+                        <input name="senha" type="password" name="senha-user" id="senha-user" class="input-user" placeholder="Sua senha">
+                        <p id="senha-error"></p>
+                    </div>
+
+                    <button type="submit" id="button-login" class="button-login">ENTRAR</button>
+                </form>
+            </div>
+        </div>
+    </main>
 </body>
-<script src="assets/js/script.js"></script>
-<script src="assets/js/config.js"></script>
-
+<script src="./assets/js/verify.js"></script>
 </html>

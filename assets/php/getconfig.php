@@ -1,7 +1,9 @@
 <?php
+session_start();
+
 @include "conection.php";
 
-$iduser = 1;
+$iduser = $_SESSION['id-user'];
 
 $sqlconfig = "SELECT * FROM configuracao WHERE usuario_id = $iduser";
 
