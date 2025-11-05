@@ -18,21 +18,19 @@ if ($linkresult) {
 $sqlusuario = "SELECT * FROM usuario WHERE id = $iduser";
 $usuarioresult = $mysqli->query($sqlusuario);
 
-if($usuarioresult && $usuarioresult->num_rows > 0){
+if ($usuarioresult && $usuarioresult->num_rows > 0) {
     $usuario = [];
-    while($row = $usuarioresult->fetch_assoc()){
-        if(!empty($row["foto"]))
+    $row = $usuarioresult->fetch_assoc();
+    if (!empty($row["foto"])) {
         $row["foto"] = base64_encode($row["foto"]);
-
-    array_push($usuario, $row);
     }
-    
+    array_push($usuario, $row);
 };
 
-echo json_encode([
-    "usuarios" => $usuario,
-    "links" => $links
+echo json_encode(
+    [
+        "usuarios" => $usuario,
+        "links" => $links
     ]
 );
-
 ?>

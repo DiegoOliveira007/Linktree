@@ -3,6 +3,10 @@
     --color-segundary: #cf708f;
     --color-tertiary: #081b22;
     --color-quaternary: #5b445e;
+    --color-red: #a51d01;
+    --color-red-secundary: #fd4b27ad;
+    --color-green: #048600;
+    --color-gray: #6e6e6e;
     --color-fonte: #806883;
     --color-white: #f1f1f1;
     --font-primary: "Bebas Neue";
@@ -22,7 +26,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 7%;
+    margin-top: 4%;
 }
 
 #conteiner-login{
@@ -61,6 +65,17 @@ body {
     background-image: linear-gradient(to bottom, var(--color-primary), var(--color-segundary) 90%);
 }
 
+#error-box{
+    display: none;
+    background-color: var(--color-red-secundary);
+    padding: 5%;
+    width: 95%;
+    color: var(--color-white);
+    font-size: 18px;   
+    text-align: center;
+    border-radius: 10px;
+}
+
 #forms-login{
     display: flex;
     width: 100%;
@@ -80,6 +95,12 @@ body {
     font-size: 19px;
 }
 
+.error-mensage{
+    color: var(--color-red);
+    font-size: 14px;
+    font-weight: bold;
+}
+
 .input-user{
     border: solid 2px var(--color-tertiary);
     font-size: 15px;
@@ -88,6 +109,16 @@ body {
     padding: 2%;
     height: 20px;
     transition: border 0.1s ease-in-out;
+}
+
+.error-input{
+    border: solid 2px var(--color-red);
+    box-shadow: 0 2px 2px var(--color-red);
+}
+
+.correct-input{
+    border: solid 2px var(--color-green);
+    box-shadow: 0 2px 2px var(--color-green);
 }
 
 .input-user:focus{
@@ -118,6 +149,12 @@ body {
 .button-login:active{
     transform: scale(0.9);
     box-shadow: 0 1px var(--color-quaternary);
+}
+
+.button-login:disabled{
+    background-color: var(--color-gray);
+    cursor: not-allowed;
+    pointer-events: none;
 }
 
 #title-login{
