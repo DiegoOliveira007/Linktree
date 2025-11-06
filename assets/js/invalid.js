@@ -61,7 +61,8 @@ forms.addEventListener("submit", function (event) {
             }
         })
         .catch(error => {
-            console.log(error)
+            console.log("Ocorreu um erro:", error);
+            errorbox.innerHTML = "<p>Ocorreu um erro em seu login</p>"
         })
 });
 
