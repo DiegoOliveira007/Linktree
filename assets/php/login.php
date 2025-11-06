@@ -8,7 +8,7 @@ $senha = $_POST['senha'] ?? '';
 
 if(!empty($nome) && !empty($senha)){
     
-$sqllogin = "SELECT * FROM usuario WHERE nome = '$nome' AND senha = '$senha'";
+$sqllogin = "SELECT * FROM usuario WHERE username = '$nome' AND senha = '$senha'";
 
 $resultlogin = $mysqli->query($sqllogin);
 

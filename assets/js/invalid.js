@@ -4,14 +4,14 @@ const errorbox = document.getElementById("error-box");
 const buttonforms = document.querySelector(".button-login");
 
 function erroinput() {
-    for (var input of inputs) {
+    for (let input of inputs) {
         input.classList.remove("correct-input");
         input.classList.add("error-input");
     }
 };
 
 function digitarvalid() {
-    for (var input of inputs) {
+    for (let input of inputs) {
         input.addEventListener("input", function () {
             errorbox.style.display = "none";
             if (input.value.trim() !== "") {
@@ -30,7 +30,7 @@ function digitarvalid() {
 function buttonverific() {
     var campovalido = true;
 
-    for (var input of inputs) {
+    for (let input of inputs) {
         if (input.value.trim() === "") {
             campovalido = false;
         }
