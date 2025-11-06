@@ -9,8 +9,8 @@ function getLinks() {
         .then(data => {
             usuario = document.getElementById("profile");
             for (var i = 0; i < data.usuarios.length; i++) {
-                usuario.innerHTML = usuario.innerHTML
-                    + "<div class='info-profile'>"
+                usuario.innerHTML = 
+                    "<div class='info-profile'>"
                     + "<span id='nome-user'>" + data.usuarios[i].nome + "</span>"
                     + "<img id='imagem-user' src='data:imagem/png;base64," + data.usuarios[i].foto + "' alt=''>"
                     + "<span id='frase-user'>" + data.usuarios[i].frase + "</span>"
