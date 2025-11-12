@@ -14,11 +14,11 @@
 
 @font-face {
     font-family: "Bebas Neue";
-    src: url(../font/BebasNeue-Regular.ttf);
+    src: url(../files/font/BebasNeue-Regular.ttf);
 }
 
 body {
-    background-image: url(../img/background.jpg);
+    background-image: url(../files/img/background.jpg);
     font-family: var(--font-primary);
 }
 
@@ -43,7 +43,7 @@ body {
     width: 50%;
     border-top-left-radius: 15px;
     background-color: var(--color-white);
-    background-image: url(../img/background-login.png);
+    background-image: url(../files/img/background-login.png);
     background-size: 120%;
 }
 
